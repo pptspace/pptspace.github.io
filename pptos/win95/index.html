@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>pptos.space</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <main class="container">
+        <script>
+            // Fall back if the browser doesn't support prefers-color-scheme
+            if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+                document.head.insertAdjacentHTML(
+                    'beforeend',
+                    '<link href="themes/dark-theme.css" rel="stylesheet" onload="document.documentElement.style.display=\'\'" />'
+                );
+                window.addEventListener('load', function() {
+                    document.getElementById('not-supported-warning').style.display = '';
+                });
+            }
+        </script>
+    </main>
+    <link href="../../themes/light-theme.css" rel="stylesheet" media="(prefers-color-scheme: light)" />
+    <link href="../../themes/dark-theme.css" rel="stylesheet" media="(prefers-color-scheme: dark)" />
+    <script src="https://kit.fontawesome.com/cba4c22719.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <style>
+        .display-5 {
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+        
+        #light-theme-message,
+        #dark-theme-message {
+            display: none;
+        }
+        
+        @media screen and (prefers-color-scheme: dark) {
+            #dark-theme-message {
+                display: block;
+            }
+        }
+        
+        @media screen and (prefers-color-scheme: light) {
+            #light-theme-message {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("https://pptos.space/nav.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+    <div class="container">
+        <div class="float-right align-right col-12 col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Windows 95</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Project: PowerPoint</h6>
+                    <img src="preview2.png" class="mb-2 rounded" width=100%><br>
+                    <p class="card-text">Windows 95 is a PowerPoint operating system created by Project: PowerPoint. It is created to look and feel like Windows 95, and it is all within one PowerPoint file.</p>
+                    <div class="alert border-primary">
+                        <h6 class="card-subtitle mb-3 text-primary">Compatibility</h6>
+                        <i class="fab fa-windows mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="Fully supported"></i>
+                        <i class="fab fa-apple text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-ubuntu text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                    </div>
+                    <a href="#" class="mx-1 btn btn-outline-success disabled" data-toggle="tooltip" data-placement="bottom" title="Download is currently unavailable">Download</a>
+                    <a href="#" class="mx-1 btn btn-outline-primary">Discord server</a>
+                </div>
+            </div>
+        </div>
+        <p class="display-5">Windows 95</p>
+        <p style="width:60%;" class="alert alert-warning"><i class="fas fa-exclamation-triangle pr-2"></i>This page is a work in progress!</p>
+        <!-- template-->
+        <!--<p class="alert alert-danger"><i class="fas fa-exclamation pr-2"></i>This page is a work in progress!</p>
+        <p class="alert alert-info"><i class="fas fa-info-circle pr-2"></i>This page is a work in progress!</p>-->
+
+
+        Windows 95 is a PowerPoint operating system created by Project: PowerPoint. It is created to look and feel like Windows 95, and it is all within one PowerPoint file.
+    </div>
+    <footer class="container sticky-bottom">
+        <hr>
+        <p>
+            <icon class="fas fa-copyright"></icon> pptos.space 2020 &bullet; Made with <a href="https://getbootstrap.com">Bootstrap</a></p>
+    </footer>
+    </ul>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

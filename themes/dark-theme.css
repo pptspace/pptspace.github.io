@@ -9822,3 +9822,17 @@ select::-ms-expand {
     color: white;
     text-shadow: none;
 }
+
+.carousel-center {
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    margin-bottom: 50px;
+}
+
+.carousel-center-low {
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    margin-bottom: 25px;
+}

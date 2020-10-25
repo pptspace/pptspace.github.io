@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Automatic Dark Bootstrap Theme Example</title>
+    <title>pptos.space</title>
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <main class="container">
         <script>
             // Fall back if the browser doesn't support prefers-color-scheme
             if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-                document.documentElement.style.display = 'none';
                 document.head.insertAdjacentHTML(
                     'beforeend',
                     '<link href="dark-theme.css" rel="stylesheet" onload="document.documentElement.style.display=\'\'" />'
@@ -24,10 +23,12 @@
     </main>
     <link href="themes/light-theme.css" rel="stylesheet" media="(prefers-color-scheme: light)" />
     <link href="themes/dark-theme.css" rel="stylesheet" media="(prefers-color-scheme: dark)" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cba4c22719.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <style>
         .display-5 {
             font-size: 2rem;
@@ -55,144 +56,136 @@
 </head>
 
 <body>
-    <div class="navbar navbar-dark bg-primary mb-3">
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <icon class="fas fa-desktop px-3"></icon>pptOS.space
-                </a>
+    <!--Navigation bar-->
+<div id="nav-placeholder">
 
-            </div>
-        </nav>
-        <nav class="navbar-right">
-            <div class="container">
-                <a href="#search" class="navbar-brand">
-                    <icon class="fas fa-list px-3"></icon>Full List</a>
-                <a href="/list/" class="navbar-brand">
-                    <icon class="fas fa-search px-3"></icon>Search</a>
+</div>
 
-            </div>
-        </nav>
+<script>
+$(function(){
+  $("#nav-placeholder").load("https://pptos.space/nav.html");
+});
+</script>
+<!--end of Navigation bar-->
     </div>
-    <div class="container">
-        <style>
-            /* Make the image fully responsive */
-            
-            .carousel-inner img {
-                top: 0;
-                left: 0;
-                height: 300px;
-                margin: auto;
-            }
-            
-            .carousel-item {
-                height: 300px;
-            }
-            
-            .carousel-item img {
-                height: 200px;
-            }
-            
-            .carousel img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                min-width: 100%;
-                height: 500px;
-                max-width: none;
-            }
-            
-            .carousel-inner>.item>img {
-                margin: auto;
-                width: 100%
-            }
-        </style>
-        <!-- Carousel -->
-        <div class="container mt-3">
-            <div id="pptCarousel" class="carousel slide" data-ride="carousel">
-
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#pptCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#pptCarousel" data-slide-to="1"></li>
-                    <li data-target="#pptCarousel" data-slide-to="2"></li>
-                </ul>
-
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="pptos/win95/preview2.png" width="1100" height="500">
-                        <div class="carousel-caption text-light text-shadow">
-                            <h4>PowerPoint Windows 95</h4>
-                            <p>A new and nostalgic OS</p>
-                            <a href="pptos/win95/win95.pptm" class="text-shadow-off text-light btn btn-danger">
-                                <icon class="fas fa-times-circle pr-2"></icon>Unavailable
-                                <!--<text class="small">(4.2MB)</text>--></a>
-                        </div>
+    <div class="container">        
+        <div class="alert alert-warning"><i class="fas fa-info-circle mr-2"></i>This site is a heavy work in progress. If you would like to add an OS to our list,
+            <a href=" mailto:limeyteam@protonmail.com?subject=pptSpace%20OS%20Request&body=Follow%20this%20template%20for%20your%20OS%3A%0D%0ATitle%0D%0AOS%20Creator's%20Name%0D%0AScreenshot(s)%0D%0AShort%20description%0D%0ADownload%20Link%0D%0AAlternate%20link%20(Homepage%2C%20discord%2C%20etc)"">email us!</a></div>
+            <div class="alert alert-success"><i class="fas fa-info-circle mr-2"></i>The password for the zip files are <kbd>pptosspace</kbd></div>
+            <p class="display-5">PowerPoint OS List</p>
+            <div class=" card-deck">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Windows 95</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Project: PowerPoint</h6>
+                    <img src="pptos/win95/preview2.png" class="mb-2 rounded" width=100%><br>
+                    <p class="card-text">Windows 95 is a PowerPoint operating system created by Project: PowerPoint. It is created to look and feel like Windows 95, and it is all within one PowerPoint file.</p>
+                    <div class="alert border-primary">
+                        <h6 class="card-subtitle mb-3 text-primary">Compatibility</h6>
+                        <i class="fab fa-windows mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="Fully supported"></i>
+                        <i class="fab fa-apple text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-ubuntu text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
                     </div>
-                    <div class="carousel-item align-content-center">
-                        <img class="mx-auto" src="pptos/dongvan/preview.png" width="1100" height="500">
-                        <div class="carousel-caption text-shadow">
-                            <h4>Dongvan OS 11</h4>
-                            <p>A simple, elegant design</p>
-                            <p class="btn btn-success">Download
-                                <text class="small">(4.2MB)</text></p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="pptos/jos/preview.jpg" width="1100" height="500">
-                        <div class="carousel-caption text-shadow">
-                            <h4>jOS</h4>
-                            <p>A clean, modern design with window dragging.</p>
-                            <p class="btn btn-success">Download
-                                <text class="small">(4.2MB)</text></p>
-                        </div>
-                    </div>
-
+                    <a href="#" class="mx-1 btn btn-outline-danger disabled" data-toggle="tooltip" data-placement="bottom" title="Download is currently unavailable"><i class="fas fa-times-circle mr-2"></i>Unavailable</a>
+                    <a href="#" class="mx-1 btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="This takes you to an external link">Discord server</a>
                 </div>
-
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#pptCarousel" data-slide="prev">
-                    <span class="fas fa-chevron-left text-dark"></span>
-                </a>
-                <a class="carousel-control-next" href="#pptCarousel" data-slide="next">
-                    <span class="fas fa-chevron-right text-dark"></span>
-                </a>
-            </div><br>
-
-            <!--! Old code - removing soon
-        <div id="not-supported-warning" class="mt-2 text-center alert alert-danger" style="display:none;">
-            Your browser does not support automatically switching between light and dark themes. Defaulting to dark theme.
-        </div>
-
-        <div class="mt-2 text-center alert alert-warning" id="light-theme-message">
-            <h5>Light theme is automatically activated</h5>
-            <div>Change your device's system theme to change themes</div>
-        </div>
-
-        <div class="mt-2 text-center alert bg-primary" id="dark-theme-message">
-            <div>
-                <icon class="fas fa-info-circle"></icon>
-                <h5>Dark theme is automatically activated</h5>
             </div>
-
-            <div>Change your device's system theme to change themes</div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Beach OS Revolution</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">ExeonYT</h6>
+                    <img src="pptos/beachos/preview.png" class="mb-2 rounded" width=100%><br>
+                    <p class="card-text">BeachOS is a simple OS made by ExeonYT. It is in the CozyOS family of OS's, and it has a file browser, a text editor, and a few more features.</p>
+                    <div class="alert border-primary">
+                        <h6 class="card-subtitle mb-3 text-primary">Compatibility</h6>
+                        <i class="fab fa-windows mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="Fully supported"></i>
+                        <i class="fab fa-apple text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-ubuntu text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                    </div>
+                    <a href="#" class="mx-1 btn btn-outline-success disabled" data-toggle="tooltip" data-placement="bottom" title="Download is currently unavailable">Download</a>
+                    <a href="#" class="mx-1 btn btn-outline-primary">Discord server</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Dongvan OS 11</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Li Jiang</h6>
+                    <img class="mb-2" src="pptos/dongvan/preview.png" width=100%><br>
+                    <p class="card-text">A very advanced PPT OS including taskbar position, a web browser, a text editor and much more.</p>
+                    <div class="alert border-primary">
+                        <h6 class="card-subtitle mb-3 text-primary">Compatibility</h6>
+                        <i class="fab fa-windows mr-2 text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-apple text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-ubuntu text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                    </div>
+                    <a href="#" class="mx-1 btn btn-outline-success disabled" data-toggle="tooltip" data-placement="bottom" title="Download is currently unavailable">Download</a>
+                    <a href="#" class="mx-1 btn btn-outline-primary">Discord server</a>
+                </div>
+            </div>
         </div>
-    </div>-->
+        <div class=" card-deck">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">JOS</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Papersoft</h6>
+                    <img src="pptos/jos/preview.jpg" class="mb-2 rounded" width=100%><br>
+                    <p class="card-text">JOS is a PPTOS </p>
+                    <div class="alert border-primary">
+                        <h6 class="card-subtitle mb-3 text-primary">Compatibility</h6>
+                        <i class="fab fa-windows mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="Fully supported"></i>
+                        <i class="fab fa-apple text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-ubuntu text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                    </div>
+                    <a href="#" class="mx-1 btn btn-outline-danger disabled" data-toggle="tooltip" data-placement="bottom" title="Download is currently unavailable"><i class="fas fa-times-circle mr-2"></i>Unavailable</a>
+                    <a href="#" class="mx-1 btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="This takes you to an external link">Discord server</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Tecnical Dekstop OS</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">ExeonYT</h6>
+                    <img src="pptos/beachos/preview.png" class="mb-2 rounded" width=100%><br>
+                    <p class="card-text">BeachOS is a simple OS made by ExeonYT. It is in the CozyOS family of OS's, and it has a file browser, a text editor, and a few more features.</p>
+                    <div class="alert border-primary">
+                        <h6 class="card-subtitle mb-3 text-primary">Compatibility</h6>
+                        <i class="fab fa-windows mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="Fully supported"></i>
+                        <i class="fab fa-apple text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-ubuntu text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                    </div>
+                    <a href="#" class="mx-1 btn btn-outline-success disabled" data-toggle="tooltip" data-placement="bottom" title="Download is currently unavailable">Download</a>
+                    <a href="#" class="mx-1 btn btn-outline-primary">Discord server</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Dongvan OS</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Li Jiang</h6>
+                    <img src="pptos/dongvan/preview.png" width=100%><br>
+                    <p class="card-text">A very advanced PPT OS including taskbar position, A web browser, A text editor and much more.</p>
+                    <div class="alert border-primary">
+                        <h6 class="card-subtitle mb-3 text-primary">Compatibility</h6>
+                        <i class="fab fa-windows mr-2 text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-apple text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                        <i class="fab fa-ubuntu text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Partially supported"></i>
+                    </div>
+                    <a href="#" class="mx-1 btn btn-outline-success disabled" data-toggle="tooltip" data-placement="bottom" title="Download is currently unavailable">Download</a>
+                    <a href="#" class="mx-1 btn btn-outline-primary">Discord server</a>
+                </div>
+            </div>
+        </div>
+</div>
+        <footer class="container">
+            <hr />
+            <p>
+                <icon class="fas fa-copyright"></icon> pptos.space 2020</p>
+        </footer>
 
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
 
-
-            <footer class="container ">
-                <hr />
-                <p>
-                    <icon class="fas fa-copyright"></icon> pptos.space 2020</p>
-            </footer>
-
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-            <script type="text/javascript " src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js "></script>
-            <script src="../scripts.js "></script>
 
 
 </body>

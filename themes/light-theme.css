@@ -9780,3 +9780,20 @@ a.text-dark:focus {
         border-color: #dee2e6;
     }
 }
+
+.text-shadow {
+    color: white;
+    text-shadow: black 1px 0 4px;
+}
+
+.text-shadow-off {
+    color: white;
+    text-shadow: none;
+}
+
+.carousel-center {
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    margin-bottom: 50px;
+}
